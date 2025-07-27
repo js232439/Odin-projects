@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // function upper(word){
+    //     return word.toUpperCase();
+    // }
+    function camelize(str) {
+        words = str.split('-');
+        const mappedCamel = words.map((word, index) => {
+            if (index === 0) {
+                return word;
+            } else {
+                let letters = word.split('');
+                letters[0] = letters[0].toUpperCase();
+                return letters.join('');
+            }
+        });
+        return mappedCamel.join('');
+        }
+    console.log(camelize("background-color") == 'backgroundColor');
+    camelize("list-style-image") == 'listStyleImage';
+    camelize("-webkit-transition") == 'WebkitTransition';
+    </script>
+</body>
+</html>
