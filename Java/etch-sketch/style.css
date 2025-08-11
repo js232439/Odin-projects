@@ -1,0 +1,10 @@
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 992px;
+    height: 992px;
+    border: 1px solid red;
+    /* border-width: 2px; */
+}
+
