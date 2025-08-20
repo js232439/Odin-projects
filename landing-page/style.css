@@ -11,7 +11,7 @@ body{
     background-color: #1F2937;
     display: flex;
     align-items: center;
-    padding:8px;
+    padding:16px;
     justify-content: space-around;
 }
 
@@ -28,8 +28,6 @@ body{
     font-size: 18px;
     color: #E5E7EB;
     font-weight: 300;
-    display: flex;
-    justify-content: center;
     margin: 10px;
 }
 
@@ -45,15 +43,14 @@ a{
 }
 
 #img1 {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 #img2 {
-    width: 25%;
-    height:25%;
+    width: 400px;
+    height: 200px;
     margin: 50px;
-    
 }
 
 .sub-header {
@@ -62,33 +59,67 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 50px;
 }
 
 button {
     background-color: #3882f6;
     color: #F9FAF8;
     border-radius: 8px;
-    padding: 5px;
+    padding: 8px 16px;
+    border: none;
+    font-weight: bold;
 }
 
 .left, .right{
-  display: flex;
-  align-items: center;
-  gap: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .info{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px;
+}
+
+.info > div:first-child {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 30px;
 }
 
 .cards{
     display: flex;
     justify-content: space-around;
+    gap: 30px;
 }
 
 .box{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom {
+    background-color: #E5E7EB;
+    padding: 80px;
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    text-align: center;
+    padding: 30px;
 }
